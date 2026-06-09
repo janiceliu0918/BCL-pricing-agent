@@ -91,6 +91,6 @@ bcl-price-agent/
 Reports are saved to `./reports/` with timestamp:
 ```
 reports/
-  Copy_of_WHS_RTL_20260609_143022.html   ← open in browser
+ https://colab.research.google.com/drive/1GydhNhzj2xkPQpOI7XHazw_CsZvhpGK-?usp=sharing   ← open in browser
   Copy_of_WHS_RTL_20260609_143022.xlsx   ← Excel dashboard
 ```
