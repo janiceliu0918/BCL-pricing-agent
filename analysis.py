@@ -9,12 +9,12 @@ from bcl_api import detect_wine_type, is_non_wine, filter_by_keyword, market_sta
 
 def _status_label(raw: str) -> str:
     raw = raw.lower()
-    if "active" in raw and "pending" not in raw:
-        return "Active"
     if "pending" in raw or "delist" in raw:
         return "Pending Delist"
     if "inactive" in raw or "deleted" in raw:
         return "Inactive"
+    if "active" in raw:
+        return "Active"
     return raw.title() or "Unknown"
 
 

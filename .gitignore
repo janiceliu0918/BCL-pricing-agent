@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+reports/
+.bcl_wines_cache.json

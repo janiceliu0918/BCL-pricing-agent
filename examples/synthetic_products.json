@@ -1,0 +1,4 @@
+[
+  {"sku":"DEMO-001","description":"DEMO BAROLO","status":"Inactive","final_retail":20.0,"wholesale":12.0,"markup":0.25},
+  {"sku":"DEMO-002","description":"DEMO BAROLO","status":"Active","final_retail":30.0,"wholesale":18.0,"markup":0.30}
+]
