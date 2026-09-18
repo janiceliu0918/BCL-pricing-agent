@@ -88,9 +88,26 @@ bcl-price-agent/
 
 ## Output files
 
-Reports are saved to `./reports/` with timestamp:
+Normal CLI runs write timestamped `<input-stem>_<timestamp>.html` and `.xlsx` files
+under the output folder. Excel output requires openpyxl; report generation is not AI.
+
+## Synthetic offline example and tests
+
+```bash
+python -m pip install -r requirements.txt
+python examples/offline_demo.py
+python -m unittest discover -s tests -v
 ```
-reports/
- https://colab.research.google.com/drive/1GydhNhzj2xkPQpOI7XHazw_CsZvhpGK-?usp=sharing   ← open in browser
-  Copy_of_WHS_RTL_20260609_143022.xlsx   ← Excel dashboard
+
+The demo reads `examples/synthetic_products.json` and uses a fictional in-memory
+market catalogue. It makes no API requests and writes:
+
+```text
+reports/synthetic_demo.html
+reports/synthetic_demo.xlsx
 ```
+
+Open the HTML file in a browser or the workbook in Excel. Example products, codes
+and prices are synthetic. The tool uses deterministic matching and arithmetic,
+not LLM inference or a trained model. Live API availability, regulatory assumptions
+and suitability for commercial decisions require separate validation.
